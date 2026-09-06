@@ -4,46 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms of Service — Inklings</title>
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
-    color: #2c2c2c;
-    background: #faf7f2;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 0 80px; }
-  h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 40px 0 8px; }
-  p, li { font-size: 1rem; color: #3a3a3a; }
-  ul { padding-left: 22px; }
-  li { margin: 6px 0; }
-  .meta { color: #6b6b6b; font-size: 0.9rem; margin: 0 0 8px; }
-  a { color: #6c5ce7; }
-  .nav { font-size: 0.9rem; margin-bottom: 28px; }
-  .nav a { margin-right: 16px; text-decoration: none; }
-  .card { background: #fff; border: 1px solid #ece7df; border-radius: 12px; padding: 4px 22px 18px; margin-top: 28px; }
-  hr { border: none; border-top: 1px solid #ece7df; margin: 40px 0; }
-  footer { color: #8a8a8a; font-size: 0.85rem; margin-top: 48px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #1a1a1a; color: #e8e8e8; }
-    p, li { color: #cfcfcf; }
-    .card { background: #232323; border-color: #333; }
-    .meta, footer { color: #9a9a9a; }
-    hr { border-top-color: #333; }
-  }
+  :root { --cream:#FBF8F3; --cream-deep:#F2ECE1; --paper:#FFFFFF;
+    --ink:#2C2C2C; --body:#3C382F; --muted:#6E655A; --purple:#6C5CE7; --line:#E9E2D6;
+    --shadow:0 10px 30px rgba(61,52,39,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--cream); color:var(--ink);
+    font-family:"DM Sans", system-ui, sans-serif; line-height:1.72; padding:0 20px;
+    -webkit-font-smoothing:antialiased; }
+  .topbar { max-width:760px; margin:0 auto; display:flex; align-items:center;
+    justify-content:space-between; padding:20px 0; border-bottom:1px solid var(--line); }
+  .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); }
+  .brand img { width:32px; height:32px; border-radius:9px; }
+  .brand span { font-family:"Lora", serif; font-weight:600; font-size:1.2rem; }
+  .topbar nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:.92rem; }
+  .topbar nav a:hover { color:var(--purple); }
+  .wrap { max-width:760px; margin:0 auto; padding:14px 0 80px; }
+  h1 { font-family:"Lora", serif; font-weight:600; font-size:2.1rem; margin:26px 0 4px; letter-spacing:-.3px; }
+  h2 { font-family:"Lora", serif; font-weight:600; font-size:1.28rem; margin:40px 0 8px; }
+  p, li { font-size:1rem; color:var(--body); }
+  ul { padding-left:22px; } li { margin:6px 0; }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 8px; }
+  a { color:var(--purple); }
+  .card { background:var(--paper); border:1px solid var(--line); border-radius:16px;
+    padding:6px 24px 20px; margin-top:26px; box-shadow:var(--shadow); }
+  hr { border:none; border-top:1px solid var(--line); margin:44px 0; }
+  footer { color:var(--muted); font-size:.85rem; margin-top:46px; }
 </style>
 </head>
 <body>
+<header class="topbar">
+  <a class="brand" href="index.html"><img src="icon.png" alt="Inklings"><span>Inklings</span></a>
+  <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+
 <div class="wrap">
-  <div class="nav">
-    <a href="index.html">← Inklings</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </div>
 
   <h1>Terms of Service</h1>
   <p class="meta">For <strong>Inklings: Journal, Mood &amp; Pet</strong> · Last updated: 6 August 2026</p>
