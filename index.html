@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inklings - a cozy journal with a companion who grows as you write</title>
+<title>Inklings — a cozy journal with a companion who grows as you write</title>
 <meta name="description" content="Inklings is a cozy, offline-first journaling app with mood tracking and a little companion who grows every time you write. No account, no ads, no subscription.">
-<meta property="og:title" content="Inklings - Journal, Mood &amp; Pet">
+<meta property="og:title" content="Inklings — Journal, Mood &amp; Pet">
 <meta property="og:description" content="A cozy offline journal with a companion who grows every time you write. No subscription, ever.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="icon.png">
@@ -36,7 +36,9 @@
   .brand span { font-family:"Lora", serif; font-weight:600; font-size:1.35rem; }
   .pill { display:inline-flex; align-items:center; gap:9px; background:var(--purple); color:#fff;
     border-radius:999px; padding:13px 22px; font-weight:600; font-size:1rem; text-decoration:none;
-    cursor:default; box-shadow:0 8px 20px rgba(108,92,231,.28); }
+    cursor:pointer; box-shadow:0 8px 20px rgba(108,92,231,.28); transition:transform .15s ease, box-shadow .15s ease; }
+  .pill:hover { transform:translateY(-1px); box-shadow:0 10px 24px rgba(108,92,231,.34); }
+  .pill:focus-visible { outline:3px solid var(--ink); outline-offset:3px; }
   .pill .tri { width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;
     border-color:transparent transparent transparent #fff; }
   .nav .pill { padding:10px 18px; font-size:.95rem; }
@@ -107,15 +109,15 @@
 
 <header class="wrap nav">
   <div class="brand"><img src="icon.png" alt="Inklings"><span>Inklings</span></div>
-  <span class="pill">Coming soon</span>
+  <a class="pill" href="https://play.google.com/store/apps/details?id=com.donghunglabs.inklings&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dcta%26utm_campaign%3Dprereg">Pre-register</a>
 </header>
 
 <section class="wrap hero">
   <div class="txt reveal">
     <h1>Journaling, made light.</h1>
-    <p class="sub">A cozy little journal with a companion who grows every time you write. No account, no pressure - just a quiet space to call your own.</p>
-    <span class="pill"><span class="tri"></span>Coming soon on Google Play</span>
-    <p class="cta-note">Opening for pre-registration soon, on Android.</p>
+    <p class="sub">A cozy little journal with a companion who grows every time you write. No account, no pressure — just a quiet space to call your own.</p>
+    <a class="pill" href="https://play.google.com/store/apps/details?id=com.donghunglabs.inklings&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dcta%26utm_campaign%3Dprereg"><span class="tri"></span>Pre-register on Google Play</a>
+    <p class="cta-note">Free on Android. Pre-register and it'll be on your phone on launch day.</p>
   </div>
   <div class="hero-art reveal d1">
     <img class="phone" src="screen-write.png" alt="Writing a One Line entry in Inklings">
@@ -134,7 +136,7 @@
 <section class="wrap feat">
   <div class="txt">
     <h2>Written around how you feel</h2>
-    <p>Tell Inklings how you're feeling, and it suggests a way to write that fits - a gentle nudge, so you're never staring at a blank page.</p>
+    <p>Tell Inklings how you're feeling, and it suggests a way to write that fits — a gentle nudge, so you're never staring at a blank page.</p>
   </div>
   <div class="art"><img class="phone" src="screen-mood.png" alt="Home screen with mood check-in and a suggested writing mode"></div>
 </section>
@@ -143,7 +145,7 @@
   <section class="wrap feat right">
     <div class="txt">
       <h2>A mode for every feeling</h2>
-      <p>Six small ways to write - pick whichever suits the day.</p>
+      <p>Six small ways to write — pick whichever suits the day.</p>
       <ul class="modes">
         <li><b>One Line</b><small>One sentence is all it takes.</small></li>
         <li><b>Soft Page</b><small>A safe place for whatever's weighing on you.</small></li>
@@ -160,7 +162,7 @@
 <section class="wrap feat">
   <div class="txt">
     <h2>A companion who grows with you</h2>
-    <p>Meet Biscuit, your corgi companion - with more friends on the way. Watch them level up and cheer you on as your journal fills. They're the gentle nudge that keeps journaling a joy, never a chore.</p>
+    <p>Meet Biscuit, your corgi companion — with more friends on the way. Watch them level up and cheer you on as your journal fills. They're the gentle nudge that keeps journaling a joy, never a chore.</p>
   </div>
   <div class="art"><img class="phone" src="screen-pet.png" alt="Pet leveling up after journaling"></div>
 </section>
@@ -169,7 +171,7 @@
   <section class="wrap feat right">
     <div class="txt">
       <h2>Private by design, free to keep</h2>
-      <p>Your words never leave your device - Inklings is offline-first, with no cloud and no tracking. It's free to use, every writing mode stays free, and there's no subscription. Ever.</p>
+      <p>Your words never leave your device — Inklings is offline-first, with no cloud and no tracking. It's free to use, every writing mode stays free, and there's no subscription. Ever.</p>
       <p style="margin-top:14px;"><a href="privacy.html">Read our Privacy Policy</a></p>
     </div>
     <div class="art"><img class="phone" src="screen-private.png" alt="Profile and privacy settings"></div>
@@ -179,7 +181,7 @@
 <section class="final">
   <h2>Start with one line.</h2>
   <p>Your companion is waiting.</p>
-  <span class="pill"><span class="tri"></span>Coming soon on Google Play</span>
+  <a class="pill" href="https://play.google.com/store/apps/details?id=com.donghunglabs.inklings&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dcta%26utm_campaign%3Dprereg"><span class="tri"></span>Pre-register on Google Play</a>
 </section>
 
 <footer>
@@ -190,7 +192,7 @@
       <a href="terms.html">Terms of Service</a>
       <a href="mailto:donghunglabs.support@gmail.com">Contact</a>
     </div>
-    <div class="copy">© 2026 Dong Hung Labs - Inklings is a trademark of Dong Hung Labs.</div>
+    <div class="copy">© 2026 Dong Hung Labs — Inklings is a trademark of Dong Hung Labs.</div>
   </div>
 </footer>
 
